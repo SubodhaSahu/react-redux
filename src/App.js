@@ -8,6 +8,7 @@ import AddUser from "./components/AddUser";
 import { Grid } from "@mui/material";
 import Counter from "./components/CounterHoc";
 import HoverCounterHoc from "./components/HoverCounterHoc";
+import PortalDemo from "./components/PortalDemo";
 
 function App() {
   return (
@@ -42,8 +43,10 @@ function App() {
         >
           <Counter name="subodha" />
           <HoverCounterHoc name="sahu" />
+          <PortalDemo />
         </Grid>
       </Grid>
+
       {/* <Profile />
       <Login />
       <ChangeColor /> */}
