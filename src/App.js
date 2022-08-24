@@ -6,6 +6,8 @@ import User from "./features/user";
 import Users from "./components/Users";
 import AddUser from "./components/AddUser";
 import { Grid } from "@mui/material";
+import Counter from "./components/CounterHoc";
+import HoverCounterHoc from "./components/HoverCounterHoc";
 
 function App() {
   return (
@@ -24,6 +26,22 @@ function App() {
         >
           <AddUser />
           <Users />
+        </Grid>
+      </Grid>
+      <Grid
+        container
+        spacing={0}
+        direction="column"
+        alignItems="left"
+        style={{ minHeight: "100vh", backgroundColor: "#E7EBF0" }}
+      >
+        <Grid
+          item
+          xs={3}
+          style={{ backgroundColor: "#FFFFFF", marginTop: "5%" }}
+        >
+          <Counter name="subodha" />
+          <HoverCounterHoc name="sahu" />
         </Grid>
       </Grid>
       {/* <Profile />
